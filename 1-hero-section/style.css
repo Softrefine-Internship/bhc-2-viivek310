@@ -1,55 +1,145 @@
 /* write your css here */
-*{
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --text-color-black: rgb(17, 17, 17)
+:root {
+    --text-color-black: rgb(50 50 50);
+    --nav-font-size: 16px;
+    --heading-text-size: 55px;
 }
 
-html{
-    color: var(--text-color-black)
+html {
+    color: var(--text-color-black);
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
+img {
+    width: 100%;
+}
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Navbar */
 
 
 
-#navbar{
-    height: 50px;
+#navbar {
+    height: 80px;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     padding-inline: 50px;
-}
-
-#navbar .logo{
-    background: red;
-    width: 50px;
-}
-
-#navbar .logo img{
+    font-size: var(--nav-font-size);
+    position: absolute;
     width: 100%;
+    top: 0;
+    left: 0;
 }
 
-#navbar .nav-links .links{
-    display: flex
+#navbar .logo {
+    /* background: red; */
+    width: 50px;
+    display: flex;
+    align-items: center;
 }
 
-#navbar .nav-links .links .link{
-    padding-inline: 10px;
-    list-style: none
+#navbar .logo img {
+    width: 80%;
 }
 
-#navbar .nav-links .links .link a{
+#navbar .nav-links .links {
+    display: flex;
+    color: var(--text-color-black);
+}
+
+#navbar .nav-links .links .link {
+    padding-inline: 20px;
+    list-style: none;
+    font-weight: bold;
+
+}
+
+#navbar .nav-links .links .link a {
     text-decoration: none;
     color: var(--text-color-black);
 }
 
 
-#navbar .login .login-btn{
-    height: fit-content;
+.transparent-btn {
+    background: none;
+    border: none;
+    font-size: var(--nav-font-size);
+    /* background:red */
+}
+
+
+#navbar .login .login-btn span img {
+    width: 20px
+}
+
+
+/* hero section  */
+
+#hero-section {
+    height: 100svh;
+    flex-direction: column;
+    gap: 30px;
+    padding-inline: 320px;
+    text-align: center;
+}
+
+#hero-section .readmore {
+    display: flex;
+    border: 1px solid rgba(110, 110, 110, 0.614);
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+#hero-section .readmore .readmore-link {
+    font-weight: bold
+}
+
+#hero-section .readmore .readmore-link a {
+    text-decoration: none;
+}
+
+#hero-section .readmore .readmore-link .rightArrow {
+    width: 18px;
+}
+
+
+
+#hero-section-heading {
+    font-size: var(--heading-text-size);
+    font-weight: bolder;
+    line-height: 1;
+}
+
+
+#hero-section .buttons {
+    gap: 10px;
+}
+
+#hero-section .buttons .getstarted {
+    background: rgb(79, 71, 223);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
 }

@@ -1,1 +1,26 @@
 /* write your css here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#call-to-action{
+    width: 1200px;
+    height: 80svh;
+    background: red;
+    margin: auto auto;
+}
+
+#call-to-action .image{
+    width: 50%; 
+    height: 100%;
+}
+
+#call-to-action .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
