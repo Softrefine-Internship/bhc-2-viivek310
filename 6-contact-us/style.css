@@ -1,1 +1,171 @@
 /* write your css here */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#contact-us-section{
+    min-height: 100svh;
+    padding-block: 50px;
+    position: relative
+}
+
+#contact-us-section::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(231, 231, 231, 0.374);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    backdrop-filter: blur(105px);
+}
+
+.heading,.text{
+    text-align: center;
+}
+
+.heading{
+    font-size: 35px;
+}
+
+.text{
+    color: rgb(92 92 92);
+    margin-bottom: 100px;
+}
+
+#contact-us-section form{
+    width: 50%;
+    margin: auto;
+    /* background: red; */
+}
+
+#contact-us-section form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-us-section form input{
+        border: 1px solid rgba(199, 199, 199, 0.84);
+        padding: 10px;
+        border-radius: 5px;
+        margin-block: 10px;
+        box-shadow: 0px 0px 2px 0px black;
+}
+
+#contact-us-section form .name{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#contact-us-section form >div{
+    margin-bottom: 10px;
+}
+
+#contact-us-section form .name >div{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    /* gap: 20px; */
+}
+
+#contact-us-section form .phone-number{
+    position: relative
+}
+
+#contact-us-section form .phone-number input{
+    padding-left: 40px;
+}
+
+#country-code{
+    position: absolute;
+    top: 32px;
+    left: 1px;
+    height: 36px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#contact-us-section form .message textarea{
+    margin-block: 10px ;
+    border-radius: 8px;
+    border: 1px solid rgba(199, 199, 199, 0.84);
+    box-shadow: 0px 0px 2px 0px black;
+    /* resize: none; */
+
+}
+
+#contact-us-section form .privacy-policy{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: rgb(92 92 92)
+}
+
+.privacy-policy .toggle{
+    height: 20px;
+    width: 40px;
+    border-radius: 10px;
+    background: rgb(213, 213, 213);
+    position: relative;
+}
+
+.privacy-policy .toggle .circle{
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1/1;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid gray
+}
+
+#contact-us-section form .form-btn{
+    width: 100%;
+    padding: 10px;
+    margin-block: 30px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(72,72,224);
+    color: white;
+}
+
+#contact-us-section form .form-btn:hover{
+    background: rgb(87, 87, 207)
+}
+
+.circle{
+    background:purple;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.circle:first-of-type {
+    left: 50px;
+    top: 85px;
+
+}
+
+
+.circle:nth-of-type(2) {
+    left: 40%;
+    transform: translateX(-50%);
+    top: 10px;
+    background: rgb(130, 14, 176);
+}
