@@ -6,12 +6,18 @@
 }
 
 
+#call-to-action-container{
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #call-to-action{
     width: 1200px;
-    height: 80svh;
+    height: 90svh;
     background: red;
-    margin: auto auto;
+    /* margin: auto auto; */
 }
 
 #call-to-action .image{
@@ -24,3 +30,5 @@
     height: 100%;
     object-fit: cover;
 }
+
+
