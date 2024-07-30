@@ -172,6 +172,10 @@ img {
     border: none;
 }
 
+#hero-section .buttons .getstarted:hover{
+    background: rgb(105, 97, 248)
+}
+
 /* background effect */
 .circle{
     background:purple;
