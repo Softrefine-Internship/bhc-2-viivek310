@@ -124,7 +124,7 @@ html{
     position: relative;
 }
 
-.privacy-policy .toggle .circle{
+.privacy-policy .toggle .toggle-circle{
     position: absolute;
     height: 100%;
     aspect-ratio: 1/1;
