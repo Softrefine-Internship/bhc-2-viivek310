@@ -1,1 +1,116 @@
 /* write your css here */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-gray: rgb(123, 140, 158);
+    --dark-gray: rgb(78 89 101);
+}
+
+
+html {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+header {
+    text-align: center;
+    padding-block: 30px;
+}
+
+header .pricing {
+    color: rgb(72, 72, 224);
+    font-weight: bold
+}
+
+header .pricing-heading {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+header .pricing-description {
+    width: 50%;
+    margin: auto;
+    color: var(--dark-gray);
+}
+
+
+
+
+#card-container {
+    display: flex;
+    padding-inline: 20px;
+}
+
+.card {
+    /* background: gray; */
+    width: 400px;
+    padding-inline: 45px;
+    font-size: 14px;
+}
+
+.card .type {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card .card-pricing {
+    color: var(--dark-gray)
+}
+
+.card .card-pricing .price {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.card .card-header .annually {
+    color: var(--light-gray)
+}
+
+.card .buy-btn {
+    width: 100%;
+    background: rgb(72, 72, 224);
+    color: white;
+    padding-block: 10px;
+    margin-block: 30px;
+    border-radius: 8px;
+    border: none
+}
+
+.card .get-started {
+    list-style-image: url("svgs/check.svg");
+    list-style-position: inside;
+}
+
+.card .get-started-heading {
+    margin-bottom: 10px;
+}
+
+.card .get-started-list {
+    color: var(--light-gray);
+    line-height: 1;
+}
+
+.card .get-started-list li::marker {
+    font-size: 30px;
+}
+
+
+.line {
+
+    width: 2px;
+    background: #d9d9d9;
+}

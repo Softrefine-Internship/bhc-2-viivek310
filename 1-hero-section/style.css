@@ -116,7 +116,6 @@ img {
     width: 100%;
     background: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(100px);
-    /* background-blend-mode:; */
     z-index: -1;
 }
 
