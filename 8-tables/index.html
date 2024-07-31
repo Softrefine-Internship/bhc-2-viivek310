@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tables</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="heading">
+      <div class="users">
+        Users
+      </div>
+      <p class="text">A list of all the users in your account including their name, title, email and role</p>
+    </div>
+    <div class="button">
+      <button class="add-user-btn">Add user</button>
+    </div>
+  </header>
+  <div class="table">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Title</th>
+          <th>Email</th>
+          <th colspan="2">Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lindsay Walton</td>
+          <td>Front-end Developer</td>
+          <td>lindsay.walton@example.com</td>
+          <td>Member</td>
+          <td class="blue">Edit</td>
+        </tr>
+        <tr>
+          <td>Courtney Henry</td>
+          <td>Designer</td>     
+          <td>courtney.henry@example.com</td>
+          <td>Admin</td>
+          <td class="blue">Edit</td>
+        </tr>
+        <tr>
+          <td>Tom Cook</td>
+          <td>Director of Product</td>
+          <td>tom.cook@example.com</td>
+          <td>Member</td>
+          <td class="blue">Edit</td>
+        </tr>
+        <tr>
+          <td>Whitney Francis</td>
+          <td>Copywriter</td>
+          <td> whitney.francis@example.com</td>
+          <td>Admin</td>
+          <td class="blue">Edit</td>
+        </tr>
+        <tr>
+          <td>Leonard Krasner</td>
+          <td>Senior Designer</td>
+          <td>leonard.krasner@example.com</td>
+          <td>Owner</td>
+          <td class="blue">Edit</td>
+        </tr>
+        <tr>
+          <td>Floyd Miles</td>
+          <td>Principal Designer</td>
+          <td>floyd.miles@example.com</td>
+          <td>Member</td>
+          <td class="blue">Edit</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </body>
+
 </html>

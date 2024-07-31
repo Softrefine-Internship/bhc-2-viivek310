@@ -1,1 +1,74 @@
 /* write your css here */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.users{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text{
+    color: rgb(108, 107, 107)
+}
+
+table{
+    width: 1200px;
+    padding-inline: 40px;
+    border-spacing: 0;
+    color: gray;
+    margin: auto;
+}
+
+table th{
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+table td:first-child{
+    font-weight: bold;
+    color: black;
+}
+
+table th,td{
+    height: 50px;
+    border-bottom: 1px solid rgba(175, 173, 173, 0.527);
+    border-collapse: collapse;
+}
+table tr:last-child td{
+    border: none;
+}
+
+.blue{
+    color: rgb(72,72,224);
+    font-weight: bold;
+    width: 100px;
+    text-align: end;
+}
+
+.add-user-btn{
+    padding: 10px;
+    background: rgb(72,72,224);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
