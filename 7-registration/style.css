@@ -29,7 +29,7 @@ img{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    min-height: 120svh;
+    min-height: 100svh;
     padding-block: 60px;
     gap: 50px
 }
