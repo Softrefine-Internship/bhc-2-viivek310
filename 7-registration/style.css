@@ -1,1 +1,162 @@
 /* write your css here */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+img{
+    width: 100%;
+}
+
+#registration-section,header{
+    background: rgb(249,250,251);
+    background: transparent
+}
+
+#registration-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 120svh;
+    padding-top: 60px;
+}
+
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 5%
+}
+
+.logo{
+    width: 50px;  
+    margin: auto;
+}
+
+.signin{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#registration-section form{
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 1px 40px 1px rgba(12, 12, 12, 0.192);
+    width: 450px;
+}
+
+#registration-section form > div:not(div:last-child){
+    margin-bottom: 25px;
+}
+
+#registration-section form .inp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px
+}
+
+#registration-section form .inp input{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(200, 199, 199, 0.774)
+}
+
+#registration-section form .utilities{
+    display: flex;
+    justify-content: space-between;
+}
+
+#registration-section form .utilities .remember{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#registration-section form .utilities .remember input[type="checkbox"]{
+    width: 15px; 
+    height: 15px;
+    border-radius: 5px;
+    appearance: none;
+    outline: none;
+    border: 1px solid rgba(215, 202, 202, 0.792);
+    
+}
+
+#registration-section form .utilities .remember input[type="checkbox"]:checked{
+    background-image: url("svgs/check.svg");
+    background-size: cover;
+}
+
+#registration-section form button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    border: none
+}
+
+#registration-section form .signin-btn{
+    background: rgb(72,72,224)
+}
+
+#registration-section form .or{
+    text-align: center;
+}
+
+#registration-section form  .options{
+    display: flex;
+    gap: 10px
+}
+
+
+#registration-section form  .options .twitter-btn{
+    background: rgb(0,155,236)
+}
+
+#registration-section form  .options .github-btn{
+    background: rgb(36,41,47)
+}
+
+#registration-section form .utilities .forgot a{
+    text-decoration: none;
+    color: rgb(72,72,224);
+}
+
+
+#registration-section form  .options button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#registration-section form  .options .options-logo{
+    width: 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    color: rgb(139, 139, 139);
+    margin-top: 40px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(72,72,224)
+}
