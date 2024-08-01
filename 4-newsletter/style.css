@@ -66,5 +66,10 @@ html{
     border-radius: 8px; 
     margin-inline: 5px;
     font-weight: bold;
-    border: none
+    border: none;
+    transition: background .8s;
+}
+
+#newsletter-section form .btn:hover{
+    background: gray
 }

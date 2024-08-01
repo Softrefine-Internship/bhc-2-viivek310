@@ -98,6 +98,8 @@ html{
     border: none;
     outline: none;
     background: transparent;
+    padding-inline: 5px;
+    color: gray;
 }
 
 #contact-us-section form .message textarea{
@@ -112,8 +114,10 @@ html{
 #contact-us-section form .privacy-policy{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
-    color: rgb(92 92 92)
+    color: rgb(92 92 92);
+    appearance: none;
 }
 
 .privacy-policy a{
@@ -121,19 +125,37 @@ html{
 }
 .privacy-policy .toggle{
     height: 20px;
-    width: 40px;
-    border-radius: 10px;
+    width: 45px;
+    border-radius: 15px !important;
     background: rgb(213, 213, 213);
     position: relative;
+    appearance: none;
+    position: relative;
+    border:none;
+    outline: none;
+    transition: background .8s
 }
 
-.privacy-policy .toggle .toggle-circle{
+.privacy-policy .toggle:checked{
+    background: blue;
+    transition: background 2s
+}
+
+.privacy-policy .toggle::after{
+    content: '';
     position: absolute;
-    height: 100%;
+    height: 120%;
     aspect-ratio: 1/1;
     background: white;
     border-radius: 50%;
-    border: 1px solid gray
+    border: 1px solid gray;
+    top: -2px;
+    left: -2px;
+    transition: transform .8s
+}
+
+.privacy-policy .toggle:checked::after{
+    transform: translateX(80%);
 }
 
 #contact-us-section form .form-btn{
@@ -144,7 +166,13 @@ html{
     border: none;
     background: rgb(72,72,224);
     color: white;
+    transition: background .8s;
 }
+
+#contact-us-section form .form-btn:hover{
+    background: #6d6de6 !important
+}
+
 
 #contact-us-section form .form-btn:hover{
     background: rgb(87, 87, 207)

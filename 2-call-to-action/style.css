@@ -90,4 +90,10 @@
     border: none;
     border-radius: 8px;    
     font-size: 15px;
+    transition: all .8s;
+}
+
+#call-to-action .help-btn:hover{
+    background: gray;
+    color: black;
 }

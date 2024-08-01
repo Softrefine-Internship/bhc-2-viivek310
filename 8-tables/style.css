@@ -71,4 +71,9 @@ table tr:last-child td{
     color: white;
     border: none;
     border-radius: 8px;
+    transition: opacity 0.8s;
+}
+
+.add-user-btn:hover{
+    opacity: 0.8;
 }
