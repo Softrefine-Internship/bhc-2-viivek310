@@ -167,16 +167,13 @@ html{
     background: rgb(72,72,224);
     color: white;
     transition: background .8s;
+    cursor: pointer;
 }
 
 #contact-us-section form .form-btn:hover{
-    background: #6d6de6 !important
+    background: #6d6de6 
 }
 
-
-#contact-us-section form .form-btn:hover{
-    background: rgb(87, 87, 207)
-}
 
 .circle{
     background:purple;

@@ -95,6 +95,7 @@ header .pricing-description {
     border-radius: 8px;
     border: none;
     transition: background .8s;
+    cursor: pointer;
 }
 
 

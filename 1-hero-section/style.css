@@ -147,6 +147,7 @@ img {
 #hero-section .readmore .readmore-link a {
     text-decoration: none;
     color: blue;
+    cursor: pointer;
 }
 
 #hero-section .readmore .readmore-link .rightArrow {
@@ -175,6 +176,7 @@ img {
     padding: 10px;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 
 #hero-section .buttons .getstarted:hover{

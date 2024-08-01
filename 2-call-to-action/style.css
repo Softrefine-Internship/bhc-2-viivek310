@@ -91,6 +91,7 @@
     border-radius: 8px;    
     font-size: 15px;
     transition: all .8s;
+    cursor: pointer;
 }
 
 #call-to-action .help-btn:hover{

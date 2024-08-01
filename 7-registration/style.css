@@ -105,7 +105,8 @@ img{
     border-radius: 5px;
     color: white;
     border: none;
-    transition: opacity .8s
+    transition: opacity .8s;
+    cursor: pointer;
 }
 
 #registration-section form button:hover{
