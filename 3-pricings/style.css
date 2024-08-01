@@ -9,7 +9,7 @@
 }
 
 :root {
-    --light-gray: rgb(123, 140, 158);
+    --light-gray: rgb(106, 117, 128);
     --dark-gray: rgb(78 89 101);
 }
 
@@ -104,7 +104,7 @@ header .pricing-description {
 
 
 .card .get-started-heading {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .card .get-started-list {
@@ -117,9 +117,9 @@ header .pricing-description {
 .card .get-started-list li{
     color: var(--light-gray);
     line-height: 1;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     vertical-align:auto;
-    padding-left: 15px;
+    padding-left: 25px;
     position: relative;
 }
 
@@ -130,7 +130,7 @@ header .pricing-description {
     width: 15px;
     border-radius: 50%;
     background: url("svgs/check.svg");
-    left: -5px;
+    left: -3px;
     top: -1px
 }
 
